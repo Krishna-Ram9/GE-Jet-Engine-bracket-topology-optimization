@@ -6,6 +6,8 @@ Reconstruction and structural validation of GE's jet engine bracket challenge (G
 
 **Material:** Ti-6Al-4V, 903 MPa yield (per GE challenge spec)
 **Tools:** SolidWorks, CATIA, ANSYS Mechanical 2025 R2, ANSYS Topology Optimization
+![Baseline](01-baseline-isometric.png) 
+![Baseline](02-front-section-view.png) 
 
 ---
 
