@@ -49,25 +49,6 @@ V1 had a sharp, unfilleted boss-to-base corner that produced a classic non-conve
 ## Topology optimization — status
 
 Design region, exclusion zones (bolt holes, clevis bore), and objective are scoped in the report; the optimizer has not yet been run. This is the active next step, followed by a manufacturability redesign and validation FEA on the optimized geometry.
-
-## Repo Structure
-
-```
-ge-bracket-topology-optimization/
-├── README.md
-├── report/
-│   └── Bracket_Topology_Optimization_Report_V2.pdf
-├── cad/
-│   ├── bracket-v2-baseline.SLDPRT
-│   ├── 01-baseline-isometric.png
-│   ├── 02-front-section-view.png
-│   └── 03-base-plate-profile.png
-└── analysis/
-    ├── 04-load-application-LC2-example.png
-    ├── 05-v1-reference-mesh.png
-    ├── 06-von-mises-stress-LC2.png
-    ├── 07-total-deformation-LC2.png
-    └── 08-safety-factor-LC1.png
 ```
 
 ## Status
