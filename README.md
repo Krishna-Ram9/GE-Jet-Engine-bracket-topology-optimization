@@ -23,10 +23,12 @@ The bracket clevis-pins to the jet engine at Interface 1 and bolts to the aircra
 | LC4 | Torsional | 564,924 N·mm | About pin centerline |
 
 Target: FOS ≥ 1.5 on yield under each load case individually (per the challenge's Phase I criteria), while minimizing mass.
+![Baseplate](03-base-plate-profile.png) 
 
 ## Baseline design (V2)
 
 V1 had a sharp, unfilleted boss-to-base corner that produced a classic non-converging stress singularity under mesh refinement. V2's fix: systematic 3 mm (R3) fillets at every boss-to-base and boss-to-boss transition.
+![LC2](04-load-application-LC2-example.png) 
 
 ## Mesh sensitivity study
 
@@ -38,8 +40,9 @@ V1 had a sharp, unfilleted boss-to-base corner that produced a classic non-conve
 | Face Sizing (0.5/1.5) | — | 473,537 | 348.62 | 2.59 | +9.9% |
 
 **Finding:** even with the larger V2 fillet, peak stress does not converge monotonically. The dip-then-rise pattern persisted when the fillet was enlarged to 4 mm (≈280/260/310/323 MPa) and a Hex Dominant mesh failed to complete after four attempts — consistent with a locally mesh-sensitive feature at the boss-to-boss inner corner, not a modeling defect (a SolidWorks geometry check found only a 5-micron B-rep tolerance gap there). Following the same practical-baseline approach used for V1, the 473,537-element Face Sizing mesh is reported as the V2 baseline, with this limitation carried forward rather than treated as resolved.
+![Mesh](05-v1-reference-mesh.png) 
 
-## Baseline results (LC1, final mesh)
+## Baseline results (LC2, final mesh)
 
 | Metric | Value | Location |
 |---|---|---|
@@ -47,6 +50,9 @@ V1 had a sharp, unfilleted boss-to-base corner that produced a classic non-conve
 | Max Deflection | 0.1734 mm | Top face, unloaded boss tower |
 | Minimum FOS | 2.59 | Same location as max stress |
 | Mass | 1.094 kg | — |
+![Stress](06-von-mises-stress-LC2.png) 
+![deformation](07-total-deformation-LC2.png) 
+![Safety-factor](08-safety-factor-LC1.png) 
 
 ## Topology optimization — status
 
